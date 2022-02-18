@@ -1,5 +1,6 @@
 // the score storage for computer , player and general storage
-
+let playerScore = 0 ;
+let computerScore = 0;
 let count = 0;
 
 
@@ -17,8 +18,7 @@ function computerPlay(){
 // Create function playerRound that accepts two parameter
 //const input = prompt("Input your game:")
 
-let playerScore = 0 ;
-let computerScore = 0;
+
 
 function playerRound(playerSelection, computerSelection){
    
@@ -107,6 +107,7 @@ if(gameRound === ("You lose: paper beats rock" || "You lose: rock beat scissors"
         return gameRound
  }
 
+ //Play the game five times
 
 console.log(game())
 console.log(game())
@@ -114,8 +115,10 @@ console.log(game())
 console.log(game())
 console.log(game())
 
+
+// Checking the winnner
 if(computerScore > playerScore){
-    console.log("Computer wins")
+    console.log("Computer wins: you lose")
 }else if(computerScore < playerScore){
     console.log("Player wins")
 }
