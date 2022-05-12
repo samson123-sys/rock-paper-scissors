@@ -93,13 +93,13 @@ let gameRound = playerRound(playerDo, computerDo);
 
 
 if(gameRound === ("You lose: paper beats rock" || "You lose: rock beat scissors" || "You lose: scissors beats paper")){
-           computerScore= computerScore + 1
-           count+=1
-        }else if(gameRound === ("You win: rock beats scissors" || "You win: scissors beats paper" || "You win: paper beats rock") ){
-             playerScore= playerScore + 1
-             count= count + 1
-        }else{
-            count= count + 1
+        computerScore = computerScore + 1
+        count+=1
+    }else if(gameRound === ("You win: rock beats scissors" || "You win: scissors beats paper" || "You win: paper beats rock") ){
+        playerScore= playerScore + 1
+        count= count + 1
+    }else{
+        count= count + 1
         }
 
         
